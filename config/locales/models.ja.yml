@@ -3,7 +3,7 @@ ja:
     models:
       book: 本
     attributes:
-      model:
+      book:
         title: タイトル
         memo: メモ
         picture: 画像
