@@ -17,3 +17,8 @@ module BooksApp
     # the framework and any gems in your application.
   end
 end
+
+# アプリケーションで有効とする言語
+I18n.available_locales = [:en, :ja]
+# デフォルト言語
+I18n.default_locale = :ja
