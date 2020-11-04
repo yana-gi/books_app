@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= t 'activerecord.models.book' %></h1>
+<h1><%= t 'activerecord.models.book' %> <%= t 'page.index' %></h1>
 
 <table>
   <thead>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>
+<%= link_to t('button.new'), new_book_path %>

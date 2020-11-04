@@ -5,3 +5,9 @@ ja:
     show: 詳細
     index: 一覧
     destroy: 削除
+    new: 新規作成
+  page:
+    edit: 編集
+    show: 詳細
+    index: 一覧
+    new: 新規作成
