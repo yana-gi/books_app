@@ -11,3 +11,5 @@ ja:
     show: 詳細
     index: 一覧
     new: 新規作成
+  hoge:
+    destoroy: 本当に削除しますか？
