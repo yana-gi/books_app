@@ -11,5 +11,9 @@ ja:
     show: 詳細
     index: 一覧
     new: 新規作成
-  hoge:
+  message:
+    success: 
+      create: 書籍が正常に作成されました
+      update: 書籍が正常に更新されました
+      destroy: 書籍が正常に削除されました
     destoroy: 本当に削除しますか？
