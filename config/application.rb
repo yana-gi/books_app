@@ -10,15 +10,13 @@ module BooksApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
-
+    # 有効言語の設定
+    config.i18n.available_locales = %i[ja en]
+    # デフォルト言語の指定
+    config.i18n.default_locale = :ja
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
   end
 end
-
-# アプリケーションで有効とする言語
-I18n.available_locales = [:ja, :en]
-# デフォルト言語
-I18n.default_locale = :ja
