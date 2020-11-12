@@ -1,0 +1,28 @@
+en:
+  activerecord:
+    models:
+      book: Book
+    attributes:
+      book:
+        title: Title
+        memo: Memo
+        picture: Picture
+  button:
+    edit: Edit
+    back: Back
+    show: Show
+    index: Index
+    destroy: Destroy
+    new: New
+  page:
+    edit: Edit
+    show: Show
+    index: Index
+    new: New
+  message:
+    success: 
+      create: Book was successfully created.
+      update: Book was successfully updated.
+      destroy: Book was successfully destroyed.
+    confirm:
+      destoroy: Are you sure?

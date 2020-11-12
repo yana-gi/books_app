@@ -19,6 +19,6 @@ module BooksApp
 end
 
 # アプリケーションで有効とする言語
-I18n.available_locales = [:ja]
+I18n.available_locales = [:ja, :en]
 # デフォルト言語
 I18n.default_locale = :ja
