@@ -57,6 +57,9 @@ gem 'awesome_print'
 
 gem 'carrierwave'
 
+gem 'kaminari', '~> 0.17.0'
+
 group :development do
   gem 'rubocop-fjord', require: false
 end
+
