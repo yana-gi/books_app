@@ -14,13 +14,16 @@ en:
     index: Index
     destroy: Destroy
     new: New
+    login: Login
+    logout: Logout
+    sign_up: Sign up
   page:
     edit: Edit
     show: Show
     index: Index
     new: New
   message:
-    success: 
+    success:
       create: Book was successfully created.
       update: Book was successfully updated.
       destroy: Book was successfully destroyed.

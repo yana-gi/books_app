@@ -2,6 +2,8 @@ class ApplicationController < ActionController::Base
   around_action :switch_locale
   # ログイン済ユーザーのみにアクセスを許可する
   before_action :authenticate_user!
+  # deviseコントローラーにストロングパラメータを追加する
+  before_action :configure_permitted_parameters, if: :devise_controller?
 
   # ロケールを変更する
   def switch_locale(&action)
@@ -24,4 +26,13 @@ class ApplicationController < ActionController::Base
     new_user_session_path
   end
 
+  protected
+
+  def configure_permitted_parameters
+    added_attrs = [:name, :email, :password, :postal_code,:address,:description,:password_confirmation, :remember_me]
+    # サインアップ時にnameのストロングパラメータを追加
+    devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
+
+    devise_parameter_sanitizer.permit :account_update, keys: added_attrs
+    end
 end
