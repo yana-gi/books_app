@@ -63,3 +63,5 @@ group :development do
   gem 'rubocop-fjord', require: false
 end
 
+gem 'devise'
+gem 'devise-i18n'
