@@ -21,6 +21,9 @@ ja:
     index: 一覧
     destroy: 削除
     new: 新規作成
+    login: ログイン
+    logout: ログアウト
+    sign_up: サインアップ
   page:
     edit: 編集
     show: 詳細
