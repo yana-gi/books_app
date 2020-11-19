@@ -7,4 +7,5 @@ class User < ApplicationRecord
   validates :postal_code, format: { with: /\A\d{3}-\d{4}\z/ }
   validates :address, length: { maximum: 100 }
   validates :description, length: { maximum: 250 }
+  has_many :books
 end

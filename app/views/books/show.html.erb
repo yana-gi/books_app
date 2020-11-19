@@ -13,5 +13,10 @@
   <%= image_tag(@book.picture_url) if @book.picture.present? %>
 </p>
 
+<p>
+  <strong><%= t 'activerecord.attributes.book.user_id' %>:</strong>
+  <%= link_to User.find(@book.user_id).name, user_path(@book.user_id) %>
+</p>
+
 <%= link_to t('button.edit'), edit_book_path(@book) %> |
 <%= link_to t('button.back'), books_path %>
