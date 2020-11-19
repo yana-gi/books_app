@@ -1,3 +1,6 @@
+<h1><%= t 'activerecord.models.user.one' %> <%= t('button.show') %></h1>
+
+
 <p>
   <strong><%= t 'activerecord.attributes.user.name' %>:</strong>
   <%= @user.name %>
@@ -17,3 +20,5 @@
   <strong><%= t 'activerecord.attributes.user.description' %>:</strong>
   <%= @user.description %>
 </p>
+
+<%= link_to t('button.back'), books_path %>
