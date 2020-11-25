@@ -1,4 +1,4 @@
-<h1><%= t 'activerecord.models.book' %> <%= t('button.new') %></h1>
+<h1><%= Book.model_name.human %> <%= t('button.new') %></h1>
 
 <%= render 'form', book: @book %>
 
