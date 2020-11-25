@@ -17,7 +17,7 @@
 
 <p>
   <strong><%= t 'activerecord.attributes.book.user_id' %>:</strong>
-  <%= link_to User.find(@book.user_id).name, user_path(@book.user_id) %>
+  <%= link_to @book.user.name, user_path(@book.user) %>
 </p>
 
 <%= link_to t('button.edit'), edit_book_path(@book) %> |
