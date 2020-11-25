@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   }
 
   scope '(:locale)' do
-    get 'users/show'
-    resources :users, :books
+    resources :users, only: [:show]
+    resources :books
   end
 end
